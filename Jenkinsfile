@@ -10,7 +10,7 @@ node {
    }
    stage('Build') {
       // Run the maven build
-       sh 'mvn -B -DskipTests clean package'
+       bat 'mvn -B -DskipTests clean package'
    }
   
 }
