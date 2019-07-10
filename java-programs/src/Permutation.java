@@ -6,6 +6,7 @@ public class Permutation {
 		ch[i] =ch[j];
 		ch[j] =temp;
 		
+		
 	}
 	static void permutations(char [] ch,int currentIndex) {
 		if(currentIndex == ch.length-1) {
