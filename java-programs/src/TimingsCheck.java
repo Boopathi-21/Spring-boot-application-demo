@@ -1,9 +1,10 @@
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Collections;
 import java.util.HashMap;
+import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.stream.Collectors;
 
 public class TimingsCheck {
 	
@@ -55,10 +56,13 @@ public class TimingsCheck {
 				chrNonRepeatList.add(Character.toString(a));
 			}
 		}
+		Map<String,Integer> sortedMap =charMap.entrySet().stream().
+				sorted(Map.Entry.comparingByKey()).collect(
+				Collectors.toMap(Map.Entry::getKey,Map.Entry::getValue,
+						(oldValue, newValue) -> oldValue, HashMap::new));
+		System.out.println("sortedMap...." +sortedMap);
 		for(Map.Entry<String, Integer> entry : charMap.entrySet()) {
-			if(entry.getValue() ==1) {
 				System.out.println("map value .... " + entry.getKey());
-			}
 			
 		}
 		System.out.println("first-NOn-repeating character.." + chrNonRepeatList.get(0));
