@@ -21,6 +21,7 @@ import com.altimetrikbanktransaction.model.SendForm;
 @RestController
 public class AltimetrikTransaction  {
 	
+	
 	@Autowired(required =true)
 	private JpaRepository<AccountEntity, Integer> jpa;
 	
