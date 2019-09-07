@@ -1,11 +1,11 @@
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 
-import javax.lang.model.element.Element;
 
 public class simplePrograms {
+	
+	List<String> listType = new List();
 	
 	public static void foo(String s) {
 		System.out.println("ssssss" + s);
@@ -43,11 +43,16 @@ public class simplePrograms {
 				}
 			}
 		}
+		
+		 List<Integer> integerList = Arrays.asList(100,12,4,5);
+	        
+		    Collections.
+		        try{
+		          System.out.println(integerList.get(2));
+		            }
+		        catch(Exception e){
+		            System.out.println("NIl");
+		}	
+		        
 	}
-	
-	
-	
-
-	
-
 }
