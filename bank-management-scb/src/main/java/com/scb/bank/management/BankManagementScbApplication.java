@@ -1,13 +1,13 @@
-package com.altimetrikbanktransaction;
+package com.scb.bank.management;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class AltimetrikBankTransactionApplication {
+public class BankManagementScbApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(AltimetrikBankTransactionApplication.class, args);
+		SpringApplication.run(BankManagementScbApplication.class, args);
 	}
 
 }
